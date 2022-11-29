@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./src/img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightslategray;
+  border-radius: 1rem;
+  gap: 1rem;
+  width: 350px;
+  padding: 0.5rem;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5rem;
+  gap: 1.8rem;
+}
+
+.card__description {
+  margin-bottom: 2rem;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.card__footer .card__btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 1rem;
+  border: none;
+  font-weight: bold;
+  background-color: lightcyan;
+  margin-top: 1rem;
+}
+
+.card__footer .card__btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #0005;
+  transform: translateY(0.5%);
+  transform: scale(1.1);
+  transform: box-shadow 100ms ease, transform 100ms ease;
+}
